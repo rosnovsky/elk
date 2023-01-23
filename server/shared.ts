@@ -46,7 +46,7 @@ async function fetchAppInfo(origin: string, server: string) {
     method: 'POST',
     body: {
       client_name: APP_NAME + (config.public.env !== 'release' ? ` (${config.public.env})` : ''),
-      website: 'https://elk.zone',
+      website: 'https://elk-q9blcqeht-rosnovsky.vercel.app/',
       redirect_uris: getRedirectURI(origin, server),
       scopes: 'read write follow push',
     },
